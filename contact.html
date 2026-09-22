@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Sowade Maxime</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TETE / MENU ===== -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/logo_png.png" alt="Logo Sowade Maxime" width="45">
+        <span>Sowade Maxime</span>
+      </a>
+
+      <button id="menuBtn">☰</button>
+
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="projet.html">Projets</a></li>
+          <li><a href="contact.html" class="actif">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+      <div class="container">
+        <h2>Vous avez un projet en tête ?</h2>
+        <p class="sous-titre">N'hésitez pas à me contacter</p>
+
+        <div class="contact-grid">
+          <form id="formContact">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom" name="nom">
+            <span class="erreur" id="erreurNom"></span>
+
+            <label for="email">Adresse email</label>
+            <input type="email" id="email" name="email">
+            <span class="erreur" id="erreurEmail"></span>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <span class="erreur" id="erreurMessage"></span>
+
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <p id="feedback"></p>
+          </form>
+
+          <div class="contact-info">
+            <h3>Coordonnées</h3>
+            <p>Téléphone : <a href="tel:+2290154846261">01 54 84 62 61</a></p>
+            <p>WhatsApp : <a href="https://wa.me/2290154846261">01 54 84 62 61</a></p>
+            <p>Email : <a href="mailto:maximesowade453@gmail.com">maximesowade453@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="annee"></span> Sowade Maxime - Développeur Web Junior</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
